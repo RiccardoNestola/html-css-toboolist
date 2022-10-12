@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
 
 }
 
 body {
     background-color: #F6F8F9;
+    font-family: 'Lato', sans-serif;
 
 }
 
@@ -28,18 +28,30 @@ h1 {
     vertical-align: top;
     margin-top: 0.5rem;
     font-weight: 900;
+    color: #011532;
 
 }
 
-h2{
+h2 {
     display: inline-block;
+    font-size: 1.3rem;
+    color: #444851
 }
 
-p{
-    font-size:0.8rem;
+
+ul {
+    margin-bottom: 1rem;
+}
+
+ul li {
+    list-style: none;
+    margin: .4rem;
+    font-size: 0.8rem;
     line-height: 2rem;
-}
+    font-weight: 600;
+    color: #011532;
 
+}
 
 main {
     margin: 2.5rem auto;
@@ -47,22 +59,26 @@ main {
 
 .container {
     width: 60%;
-    height: 100vh;
     background-color: #FFFFFF;
     margin: 0 auto;
     border-radius: 5px;
-    padding-left: 1rem;
+    padding-bottom: 1rem;
 }
 
-nav {
-    padding-top: 2%;
-    padding-bottom: 1%;
-    padding-left: 5%;
-    border-bottom: 2px solid #F6F8F9;
+.buttons {
+    padding-left: 2.5rem;
 }
 
-#add_task,
-#add_section {
+.separator {
+    width: 100%;
+    height: 2px;
+    background-color: #F6F8F9;
+}
+
+
+
+button {
+    margin: 1.5rem 0 1rem;
     border-radius: 4px;
     padding: 8px 8px;
     font-size: 12px;
@@ -80,46 +96,44 @@ nav {
     border: 1px solid #C5CBD0;
 }
 
-.task {
+.tasks {
     margin: 1.3rem 0 2rem;
-    padding-left: 1rem;
+    padding-left: 2.5rem;
 }
 
 .arrow {
-    font-size: .8rem;
-    display: inline-block;
+    font-size: 20px;
+    margin-right: 5px;
 }
-    
 
- .check, .uncheck {
-    height: 0.8rem;
-    width: 0.8rem;
-    padding:1px 3px ;  
+
+.check,
+.uncheck {
+    padding: 1px 3px;
     border-style: solid;
     border-radius: 100%;
-    border-width: 1px; 
-    margin-right: 0.8rem;
+    margin-right: 0.4rem;
     font-size: 0.6rem;
-    text-align: center;
     line-height: 1.5rem;
 }
 
 .check {
-    color:#6DC5B1;
+    color: #6DC5B1;
     border-color: #6DC5B1;
 }
 
 .uncheck {
-    color:#EB5A54;
+    color: #EB5A54;
     border-color: #EB5A54;
 }
 
 .label {
     color: #FFFFFF;
-    border:none;
+    border: none;
     border-radius: 8px;
     padding: 0.5% 1%;
     font-size: 0.6rem;
+    margin-left: 0.4rem;
 }
 
 .editorial {
@@ -146,6 +160,6 @@ nav {
     background-color: #B0C926;
 }
 
-.credits{
+.credits {
     text-align: center;
 }
